@@ -1,0 +1,42 @@
+@import "../../Styles/variables.scss";
+
+.page {
+    margin-top: $top;
+
+    .name {
+        font-family: $font1;
+        display: flex;
+        font-size: $titre;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+        color: $text;
+        margin-top: 100px; // Ajoute une marge au-dessus du titre
+        height: 50px;
+    }
+    .titre_image {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        
+        .img {
+            width: 50px;
+            height: 50px;
+            margin-left: 5%; // Ajoute une marge à gauche de l'image si nécessaire
+
+        }
+    }
+    .polaroid {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+
+        img {
+            max-width: 100%; // Ajuste la largeur de l'image pour qu'elle ne dépasse pas la largeur de son conteneur
+            height: auto; // Maintient le ratio hauteur/largeur de l'image
+            position: left;
+        }
+    }
+}

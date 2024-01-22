@@ -1,0 +1,17 @@
+<div class="page">
+    <app-header></app-header>
+    <div class="carousel">
+        <div class="navigation-buttons">
+            <button (click)="showPreviousEvent()">Previous</button>
+            <button (click)="showNextEvent()">Next</button>
+        </div>
+        <div class="events-container">
+            <div class="event">
+                <div class="event-content">{{ events[currentIndex] }}</div>
+                <div class="event-image">
+                    <img src="assets/images/polaroid_template4.png" alt="Template polaroid">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

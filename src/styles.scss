@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+@import "app/Styles/variables.scss";
+body {
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    background-color: $background;
+    font-family: $font1;
+    //font-size: $font-size;
+}
+
+.page {
+    top: $top;
+    bottom: $bottom;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
