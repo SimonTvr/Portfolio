@@ -1,9 +1,8 @@
 <div class="header">
-    <div class="accueil"><a routerLink="" class="custom-link">Simon Tauvron</a></div>
-    <div class="about"><a routerLink="/about-me" class="custom-link">About me</a></div>
-    <div class="education"><a routerLink="/education" class="custom-link">Education</a></div>
-    <div class="experience"><a routerLink="/experience" class="custom-link">Experience</a></div>
-    <div class="skills"><a routerLink="/skills" class="custom-link">Skills</a></div>
-    <div class="contact"><a routerLink="/contact" class="custom-link">Contact</a></div>
-
+    <div class="accueil"><a (click)="moveTo('accueil')">Simon Tauvron</a></div>
+    <div class="about"><a (click)="moveTo('about-me')">About me</a></div>
+    <div class="education"><a (click)="moveTo('education')">Education</a></div>
+    <div class="experience"><a (click)="moveTo('experience')">Experience</a></div>
+    <div class="skills"><a (click)="moveTo('skills')">Skills</a></div>
+    <div class="contact"><a (click)="moveTo('contact')">Contact</a></div>
 </div>

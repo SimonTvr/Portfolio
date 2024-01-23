@@ -6,10 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./accueil.component.scss']
 })
 export class AccueilComponent {
-
-  goToPart(id:number) {
-    let a = document.getElementById(id.toString());
-    console.log(a);
-    a?.scrollIntoView({behavior: 'smooth', block: 'center'});
-  }
 }

@@ -13,6 +13,7 @@ import { EducationComponent } from './Pages/education/education.component';
 import { SkillsComponent } from './Pages/skills/skills.component';
 import { ContactComponent } from './Pages/contact/contact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MainPageComponent } from './Pages/main-page/main-page.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     EducationComponent,
     SkillsComponent,
     ContactComponent,
+    MainPageComponent,
   ],
   imports: [
     BrowserModule,

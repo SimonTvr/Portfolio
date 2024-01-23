@@ -6,15 +6,10 @@ import { EducationComponent } from './Pages/education/education.component';
 import { ExperienceComponent } from './Pages/experience/experience.component';
 import { SkillsComponent } from './Pages/skills/skills.component';
 import { ContactComponent } from './Pages/contact/contact.component';
+import { MainPageComponent } from './Pages/main-page/main-page.component';
 
 const routes: Routes = [
-  { path: '', component: AccueilComponent },
-  { path: 'about-me', component: AboutMeComponent },
-  { path: 'education', component: EducationComponent },
-  { path: 'experience', component: ExperienceComponent },
-  { path: 'skills', component: SkillsComponent },
-  { path: 'contact', component: ContactComponent },
-
+  { path: '', component: MainPageComponent },
 ];
 
 @NgModule({

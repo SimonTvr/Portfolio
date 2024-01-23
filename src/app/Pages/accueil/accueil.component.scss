@@ -1,8 +1,8 @@
 @import "../../Styles/variables.scss";
 
 .page {
-    margin-top: $top;
-    animation: cameraFlash .1s .1s alternate-reverse 1;
+    padding-top: $top;
+    //animation: cameraFlash .1s .1s alternate-reverse 1;
 
     .titre {
         font-family: $font1;
@@ -39,8 +39,8 @@
         width: 100%;
         margin-top: 40px;
         overflow: hidden;
-        animation: ZoomInRotate 1.5s cubic-bezier(.71,0,.54,.88);
-        animation-delay: 300ms;
+        /*animation: ZoomInRotate 1.5s cubic-bezier(.71,0,.54,.88);
+        animation-delay: 300ms;*/
         .img {
             width: 100%; // Ajuste la largeur de l'image
             height: auto; // Maintient le ratio hauteur/largeur de l'image
@@ -48,7 +48,7 @@
     }
 }
 
-@keyframes ZoomInRotate {
+/*@keyframes ZoomInRotate {
     0% {
         transform: scale(1);
     }
@@ -62,4 +62,4 @@
 @keyframes cameraFlash {
     from {box-shadow: 0;}
     to {box-shadow: inset 0 0 0 100px #fff;}
-}
+}*/

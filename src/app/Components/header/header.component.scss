@@ -14,6 +14,12 @@
     margin-bottom: 50px;
     background-color: $background;
     box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.3);
+    a {
+        text-decoration: none; // Supprime le soulignement
+        color: inherit; // Utilise la couleur héritée, peut être modifiée selon vos besoins
+        cursor: pointer; // Ajoute un curseur pointer pour indiquer qu'il s'agit d'un lien cliquable
+    }
+    
     .custom-link {
         color: $text; /* Couleur du texte */
         text-decoration: none; /* Supprime le soulignement */

@@ -7,7 +7,14 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  constructor(private router: Router) {}
+
+  moveTo(id:string) {
+    let a = document.getElementById(id.toString());
+    console.log(a);
+    a?.scrollIntoView({behavior: 'smooth', block: 'center'});
+  }
+
+  /* constructor(private router: Router) {}
 
   Flash() {
     const section = document.querySelector('.camera-flash-section');
@@ -17,5 +24,6 @@ export class HeaderComponent {
     // Navigue vers la route "/about-me"
     this.router.navigate(['/about-me']);
   }
+  */
 }
 
