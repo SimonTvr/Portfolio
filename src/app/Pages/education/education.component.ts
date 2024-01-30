@@ -9,9 +9,10 @@ export class EducationComponent {
   currentIndex = 0;
 
   events = [
-    'Bac scientifique Lycée Banville',
+    'Bac scientifique',
     'DUT Mesures Physiques',
-    'Contenu de l\'événement 3 pour l\'éducation',
+    'CPGE ATS',
+    'ENSC'
     // Ajoutez davantage d'événements au besoin
   ];
 

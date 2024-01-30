@@ -14,6 +14,7 @@
     margin-bottom: 50px;
     background-color: $background;
     box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
     a {
         text-decoration: none; // Supprime le soulignement
         color: inherit; // Utilise la couleur héritée, peut être modifiée selon vos besoins

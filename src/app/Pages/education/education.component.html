@@ -1,4 +1,4 @@
-<div class="page">
+<div id="education" class="page">
     <div class="carousel">
         <div class="navigation-buttons">
             <button (click)="showPreviousEvent()">Previous</button>
@@ -7,9 +7,9 @@
         <div class="events-container">
             <div class="event">
                 <div class="event-content">{{ events[currentIndex] }}</div>
-                <div class="event-image">
-                    <img src="assets/images/polaroid_template4.png" alt="Template polaroid">
-                </div>
+            
+                <app-polaroid></app-polaroid>
+            
             </div>
         </div>
     </div>

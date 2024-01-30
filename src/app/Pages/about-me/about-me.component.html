@@ -1,7 +1,25 @@
 <div id="about-me" class="page">
-    <div class="titre_image">
+    <div class="head">
         <app-color-rectangle></app-color-rectangle>
-        <img class="img" src="assets/images/globe_icon.png" alt="Globe icon">
+        <img src="assets/images/globe_icon.png">
     </div>
-    <div class="polaroid"><img src="assets/images/polaroid_template4.png" alt="Template polaroid"></div>
+    <div class="card-container">
+    <div class="card">
+        <div class="front">
+        <app-polaroid class="polaroid"></app-polaroid>
+        <div class="txtpolaroid">
+            <p>{{informations.name}}</p>
+        </div>
+        </div>
+        <div class="back">
+        <!-- Contenu de la face arrière ici -->
+        <img class="back-image" src="assets/images/polaroid_template4back.png" alt="Back Image">
+        <div class="txtpolaroid2">
+            <p> Sex : {{informations.sex}}</p>
+            <p> Naionality : {{informations.nationality}}</p>
+            <p> Birth : {{informations.birth}}</p>
+        </div>
+    </div>
+    </div>
+    </div>
 </div>

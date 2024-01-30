@@ -1,2 +1,34 @@
-<div class="page">
+<div id="contact" class="page">
+    <div class="contact-form">
+
+        <div class="contact-container">
+            <div class="info-container">
+                <h2>Contact</h2>
+                <div class="info">
+                    <p>Name : {{ informations.name }}</p>
+                    <p>Email : {{ informations.email }}</p>
+                    <p>Phone : {{ informations.tel }}</p>
+                    <p>City : {{ informations.city }}</p>
+                </div>
+            </div>
+
+            <div class="formulaire">
+                <form [formGroup]="contactForm" (ngSubmit)="submitForm()">
+                    <div class="form-group">
+                        <label for="name">Your name :</label>
+                        <input type="text" id="name" formControlName="name" required placeholder="Simon">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" formControlName="email" required placeholder="stauvron@ensc.fr">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your message :</label>
+                        <textarea id="message" formControlName="message" required placeholder="Write here your message..."></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
 </div>

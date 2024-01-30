@@ -1,0 +1,90 @@
+{
+    "informations": [
+        {
+            "id": 1,
+            "name": "Simon Tauvron",
+            "age": "22 ans",
+            "birth": "02/10/2001",
+            "nationality": "French",
+            "sex": "Male",
+            "email": "stauvron@ensc.fr",
+            "tel": "06 81 21 49 83",
+            "city": "Bordeaux",
+            "photo": "assets/images/moi.jpg"
+        }
+        ],
+        "education": [
+        {
+            "id": 1,
+            "degree": "Bac scientifique",
+            "place": "Lycée Théodore de Banville",
+            "city": "Moulins",
+            "speciality": "Physique chimie",
+            "duration": "3 ans",
+            "description": "blablabla",
+            "photo":"assets/images/Banville.jpeg"
+        },
+        {
+            "id": 2,
+            "degree": "DUT Mesures Physiques",
+            "place": "IUT Clermont-Ferrand",
+            "city": "Clermont-Ferrand",
+            "speciality": "Techniques instrumentales",
+            "duration": "2 ans",
+            "description": "blablabla",
+            "photo":"assets/images/IUT.jpeg"
+        },
+        {
+            "id": 3,
+            "degree": "CPGE ATS",
+            "place": "Lycée Lafayette",
+            "city":"Clermont-Ferrand",
+            "speciality": "Sciences de l'ingénieur",
+            "duration": "1 an",
+            "description": "blablabla",
+            "photo":"assets/images/Lafayette.jpeg"
+        },
+        {
+            "id": 4,
+            "degree": "ENSC",
+            "place": "ENSC",
+            "city":"Bordeaux",
+            "speciality": "Cognitique",
+            "duration": "3 ans",
+            "description": "blablabla",
+            "photo":"assets/images/ENSC.jpeg"
+        }
+    ],
+    "portfolio":[
+        {
+            "id": 1,
+            "project": "Poulpocoin",
+            "place": "ENSC",
+            "city":"Bordeaux",
+            "type": "Projet scolaire",
+            "duration": "2 mois",
+            "description": "blablabla",
+            "photo":"assets/images/moi.jpg"
+        },
+        {
+            "id": 2,
+            "project": "Share Your Line",
+            "place": "ENSC",
+            "city":"Bordeaux",
+            "type": "Stage",
+            "duration": "1 mois",
+            "description": "blablabla",
+            "photo":"assets/images/moi.jpg"
+        },
+        {
+            "id": 3,
+            "project": "API",
+            "place": "ENSC",
+            "city":"Bordeaux",
+            "type": "Projet scolaire",
+            "duration": "2 mois",
+            "description": "blablabla",
+            "photo":"assets/images/moi.jpg"
+        }
+    ]
+}
