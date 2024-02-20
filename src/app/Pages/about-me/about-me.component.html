@@ -5,17 +5,20 @@
     </div>
     <div class="card-container">
     <div class="card">
+        <!-- Face avant -->
         <div class="front">
-        <app-polaroid class="polaroid"></app-polaroid>
+        <app-polaroid [photoSrc]="photoPath"></app-polaroid>
+    
         <div class="txtpolaroid">
             <p>{{informations.name}}</p>
         </div>
         </div>
+        <!-- Face arrière -->
         <div class="back">
-        <!-- Contenu de la face arrière ici -->
         <img class="back-image" src="assets/images/polaroid_template4back.png" alt="Back Image">
         <div class="txtpolaroid2">
-            <p> Sex : {{informations.sex}}</p>
+            <p> Gender : {{informations.sex}}</p>
+            <p> Age : {{informations.age}} years old</p>
             <p> Naionality : {{informations.nationality}}</p>
             <p> Birth : {{informations.birth}}</p>
         </div>

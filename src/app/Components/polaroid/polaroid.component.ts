@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-polaroid',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./polaroid.component.scss']
 })
 export class PolaroidComponent {
-
+  @Input() photoSrc: string = "assets/images/test.png";
 }

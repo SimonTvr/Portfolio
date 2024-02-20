@@ -3,15 +3,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%; /* Ajustez la largeur selon vos besoins */
-    height: 100%; /* Ajustez la largeur selon vos besoins */
+    width: 100%; 
+    height: 100%; 
 
     .photo-container {
         position: relative;
-        //width: 100%; /* Ajustez la largeur du template */
-        max-width: 435px; /* Largeur maximale du template */
-        //height: 100%; /* Ajustez la hauteur du template */
-        max-height: 535px; /* Hauteur maximale du template */
+
+        max-width: 435px;
+        max-height: 535px;
 
         .template {
         }

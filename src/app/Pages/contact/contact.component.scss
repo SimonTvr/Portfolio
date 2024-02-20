@@ -3,14 +3,31 @@
 .page {
     margin-top: $top;
     margin-bottom: $bottom;
-    font-family: $font1;
+    padding-top: 100px;;
+    height: 100vh;
+    
+    .titre {
+        font-family: $font1;
+        display: flex;
+        font-size: $titre;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+        color: $text;
+        margin-top: 100px;
+        height: 50px;
+    }
 
     .contact-form {
+        position: relative;
+        margin-top: 600px;
         display: flex;
         flex-direction: column;
         margin: auto;
-        padding: 20px;
         margin: 5%;
+        font-family: $font1;
 
         h2 {
             text-align: center;
@@ -31,7 +48,7 @@
                 overflow: hidden;
                 width: 100%;
                 max-width: 100%;
-                margin-bottom: 20px; // Ajoutez une marge en bas pour l'espace entre les infos et le formulaire
+                margin-bottom: 20px; 
 
             .info {
                 p {

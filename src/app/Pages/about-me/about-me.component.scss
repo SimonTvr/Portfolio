@@ -17,7 +17,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        z-index: 2; /* Assurez-vous que z-index est plus élevé que le polaroid */
+        z-index: 2; 
 
         img {
             width: 50px;
@@ -26,7 +26,7 @@
     }
 
     .card-container {
-        perspective: 1000px; // Perspective pour l'effet 3D
+        perspective: 1000px;
         z-index: 1;
         margin-top: 5%;
     }
@@ -57,14 +57,12 @@
         }
     
         .front {
-            /* Styles pour la face avant */
             text-align: center;
 
         }
     
         .back {
             transform: rotateY(180deg);
-            /* Styles pour la face arrière */
         }
         }
     
@@ -72,7 +70,7 @@
         position: absolute;
         width: 100%;
         left: 50%;
-        top: 88%; // Ajustez la valeur en fonction de la hauteur du polaroid
+        top: 88%; 
         font-family: "Fashion script";
         font-size: 7em;
         color: $c1;
@@ -84,7 +82,7 @@
             position: absolute;
             width: 100%;
             left: 50%;
-            top: 50%; // Ajustez la valeur en fonction de la hauteur du polaroid
+            top: 50%; 
             font-family: "Fashion script";
             font-size: 4em;
             color: $c1;

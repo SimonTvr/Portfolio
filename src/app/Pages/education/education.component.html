@@ -1,16 +1,22 @@
 <div id="education" class="page">
     <div class="carousel">
-        <div class="navigation-buttons">
-            <button (click)="showPreviousEvent()">Previous</button>
-            <button (click)="showNextEvent()">Next</button>
-        </div>
-        <div class="events-container">
+        <div class="events-container education-event">
+            <div class="navigation-buttons">
+                <button class="btnprevious" (click)="showPreviousEvent()">Previous</button>
+                <button class="btnnext" (click)="showNextEvent()">Next</button>
+            </div>
             <div class="event">
-                <div class="event-content">{{ events[currentIndex] }}</div>
-            
-                <app-polaroid></app-polaroid>
-            
+                <div class="event-content">
+                    <h3>{{ educationData[currentIndex]?.degree }}</h3>
+                    <p>{{ educationData[currentIndex]?.place }}</p>
+                    <p>{{ educationData[currentIndex].city }}</p>
+                    <p>{{ educationData[currentIndex].speciality }}</p>
+                    <p>{{ educationData[currentIndex].duration }}</p>
+                    <p>{{ educationData[currentIndex].description }}</p>               
+                </div>
+                <app-polaroid [photoSrc]="educationData[currentIndex]?.photo"></app-polaroid>
             </div>
         </div>
     </div>
-</div>
+</div>                   
+                    

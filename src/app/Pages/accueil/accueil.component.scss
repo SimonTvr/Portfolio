@@ -15,8 +15,8 @@
         justify-content: center;
         overflow: hidden;
         color: $text;
-        margin-top: 100px; // Ajoute une marge au-dessus du titre
-        margin-bottom: 50px; // Ajoute une marge au-dessus du titre
+        margin-top: 100px; 
+        margin-bottom: 50px;
         height: 50px;
     }
 
@@ -25,16 +25,16 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 400px; // Ajuste la hauteur de ton conteneur d'image selon tes besoins
+        height: 400px; 
         width: 100%;
-        margin-top: 40px;
+        margin-top: 100px;
         z-index: 1;
         overflow: hidden;
         /*animation: ZoomInRotate 1.5s cubic-bezier(.71,0,.54,.88);
         animation-delay: 300ms;*/
         .img {
-            width: 100%; // Ajuste la largeur de l'image
-            height: auto; // Maintient le ratio hauteur/largeur de l'image
+            width: 100%; 
+            height: auto; 
             margin-bottom: $bottom;
         }
     }

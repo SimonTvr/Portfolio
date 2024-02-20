@@ -1,15 +1,98 @@
 @import "../../Styles/variables.scss";
 
 .page {
-    margin-top : $top;
-    .carousel {
+    margin-top: $top;
+    margin-bottom: $bottom;
+    padding-top: $top;
+    height: 100vh;
+
+    .titre {
+        font-family: $font1;
         display: flex;
+        font-size: $titre;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
         overflow: hidden;
-        }
-        
-        .carousel-item {
-        flex: 0 0 auto;
+        color: $text;
+        margin-top: 100px; 
+        height: 50px;
+    }
+
+    .container {
+        position: relative;
         width: 100%;
-        transition: transform 0.5s ease;
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+        height: 500px;
+        gap: 10px;
+    
+        > div {
+        flex: 0 0 120px;
+        border-radius: 0.5rem;
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
+        box-shadow: 1px 5px 15px $c1;
+        position: relative;
+        overflow: hidden;
+    
+        &:nth-of-type(1) {
+            background: url("https://i.pinimg.com/564x/5a/5f/03/5a5f039a2cd7571f4740ff8b4f96bd71.jpg")
+            no-repeat 50% / cover;
         }
-}
+        &:nth-of-type(2) {
+            background: url("https://i.pinimg.com/564x/b4/7f/13/b47f13fa7b08591b5401cfec949dcaa5.jpg")
+            no-repeat 50% / cover;
+        }
+        &:nth-of-type(3) {
+            background: url("https://i.pinimg.com/564x/79/f6/8e/79f68e47095c6e89271df0ebb943895f.jpg")
+            no-repeat 50% / cover;
+        }
+        &:nth-of-type(4) {
+            background: url("https://i.pinimg.com/564x/8d/5d/6e/8d5d6e4635e9867667c99dd1986ce2e7.jpg")
+            no-repeat 50% / cover;
+        }
+    
+        .content {
+            font-size: 1.5rem;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            opacity: 0;
+            flex-direction: column;
+            height: 100%;
+            justify-content: flex-end;
+            background: $c1;
+            background: linear-gradient(
+            0deg,
+        $c1 0%,
+            rgba(255, 255, 255, 0) 100%
+            );
+            transform: translatey(100%);
+            transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+            visibility: hidden;
+    
+            span {
+            display: block;
+            margin-top: 5px;
+            font-size: 1.2rem;
+            }
+        }
+    
+        &:hover {
+            flex: 0 0 350px;
+            box-shadow: 1px 3px 15px $c1;
+            transform: translatey(-30px);
+        }
+    
+        &:hover .content {
+            opacity: 1;
+            transform: translatey(0%);
+            visibility: visible;
+        }
+        }
+    }
+    }      

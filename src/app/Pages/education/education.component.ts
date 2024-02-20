@@ -1,4 +1,7 @@
+// education.component.ts
+
 import { Component } from '@angular/core';
+import { DataService } from '../../../assets/data/data.service';
 
 @Component({
   selector: 'app-education',
@@ -7,17 +10,18 @@ import { Component } from '@angular/core';
 })
 export class EducationComponent {
   currentIndex = 0;
+  educationData: any[] = []; // Stock des données d'éducation
+  photoPath: string = "assets/images/moi.jpg";
 
-  events = [
-    'Bac scientifique',
-    'DUT Mesures Physiques',
-    'CPGE ATS',
-    'ENSC'
-    // Ajoutez davantage d'événements au besoin
-  ];
+
+  constructor(private dataService: DataService) {
+    this.dataService.getData().subscribe((data) => {
+      this.educationData = data.education; // Récupérer les données d'éducation du service
+    });
+  }
 
   showNextEvent() {
-    if (this.currentIndex < this.events.length - 1) {
+    if (this.currentIndex < this.educationData.length - 1) {
       this.currentIndex++;
     }
   }

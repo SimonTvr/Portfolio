@@ -10,6 +10,7 @@ export class AboutMeComponent implements OnInit {
 
   informations: any;
   isFlipped = false;
+  photoPath: string = "assets/images/moi.jpg";
 
   constructor(private dataService: DataService) {
     
