@@ -1,0 +1,124 @@
+{
+    "button" : [
+        {
+            "Previous": "Previous",
+            "Next": "Next",
+            "ShowMore":"Show more"
+        }
+    ],
+    "contact" : [
+        {
+            "YourName": "Your name",
+            "Email": "Email",
+            "YourMessage": "Your message",
+            "Send": "Send"
+        }
+    ],
+    "header":[
+        {
+            "Aboutme": "About me",
+            "Education": "Education",
+            "Experience": "Experiences",
+            "Skills": "Skills",
+            "Contact": "Contact"
+        }
+    ],
+    "informations": [
+        {
+            "id": 1,
+            "name": "Name : Simon Tauvron",
+            "age": "Age : 22 years old",
+            "birth": "Birth : 02/10/2001",
+            "nationality": "Nationality : French",
+            "sex": "Gender : Male",
+            "email": "Email : stauvron@ensc.fr",
+            "tel": "Phone : 06 81 21 49 83",
+            "city": "City : Bordeaux",
+            "photo": "assets/images/moi.jpg"
+        }
+        ],
+        "education": [
+        {
+            "id": 1,
+            "degree": "Scientific A-level equivalent",
+            "place": "Théodore de Banville Highschool",
+            "city": "Moulins",
+            "speciality": "Chemical Physics",
+            "duration": "3 years",
+            "description": "I returned by the boulevards on the starboard side, avoiding contact with the swaying pulleys and the ropes of the rigging, lashed in all directions by the wind; now keeping out of the way, here of the blows of a fly-wheel crane, and further on, of the flaming scoria which were showering from a forge like a display of fireworks.",
+            "photo":"assets/images/Banville.jpeg"
+        },
+        {
+            "id": 2,
+            "degree": "Two-year university degree in Applied Physics",
+            "place": "University Institute of Technology of Clermont-Ferrand",
+            "city": "Clermont-Ferrand",
+            "speciality": "Instrumental techniques",
+            "duration": "2 years",
+            "description": "Meanwhile the tender approached the 'Great Eastern,' whose chains were violently strained by the pressure of the tide, and ranged up to the foot of an immense winding staircase, on the larboard side. In this position the deck of the tender was only on a level with the load water-line of the steam-ship, to which line she would be depressed when in full cargo, and which still emerged two yards.",
+            "photo":"assets/images/IUT.jpeg"
+        },
+        {
+            "id": 3,
+            "degree": "One-year undergraduate intensive course",
+            "place": "Lafayette Highschool",
+            "city":"Clermont-Ferrand",
+            "speciality": "Engineering Sciences",
+            "duration": "1 year",
+            "description": "Thus the reason for rearranging the ship to this purpose, and the consequent necessity of filling up the tanks and replacing the boilers, of enlarging the saloons in which so many people were to live during the voyage, and of building extra dining saloons, finally the arrangement of a thousand berths in the sides of the gigantic hull.",
+            "photo":"assets/images/Lafayette.jpeg"
+        },
+        {
+            "id": 4,
+            "degree": "Cognitive Engineer",
+            "place": "ENSC",
+            "city":"Bordeaux",
+            "speciality": "Hybrid Cognitive Systems",
+            "duration": "3 years",
+            "description": "'Had this steam-ship been abandoned by her crew?' This was now the prevailing question, however no one appeared on the deck, perhaps the shipwrecked ones had taken refuge inside. I saw an object moving for several moments at the bows, but it turned out to be only the remains of the jib lashed to and fro by the wind.",
+            "photo":"assets/images/ENSC.jpeg"
+        }
+    ],
+    "projects":[
+        {
+            "id": 1,
+            "name": "Poulpocoin",
+            "place": "ENSC",
+            "city":"Bordeaux",
+            "type": "Scholar project",
+            "duration": "2 months",
+            "description": "I returned by the boulevards on the starboard side, avoiding contact with the swaying pulleys and the ropes of the rigging, lashed in all directions by the wind; now keeping out of the way, here of the blows of a fly-wheel crane, and further on, of the flaming scoria which were showering from a forge like a display of fireworks.",
+            "photo":"assets/images/Poulpocoin.png"
+        },
+        {
+            "id": 2,
+            "name": "Share Your Line",
+            "place": "ENSC",
+            "city":"Bordeaux",
+            "type": "Internship",
+            "duration": "1 month",
+            "description": "Meanwhile the tender approached the 'Great Eastern,' whose chains were violently strained by the pressure of the tide, and ranged up to the foot of an immense winding staircase, on the larboard side. In this position the deck of the tender was only on a level with the load water-line of the steam-ship, to which line she would be depressed when in full cargo, and which still emerged two yards.",
+            "photo":"assets/images/SYL.png"
+        },
+        {
+            "id": 3,
+            "name": "API",
+            "place": "ENSC",
+            "city":"Bordeaux",
+            "type": "Scholar project",
+            "duration": "2 months",
+            "description": "Thus the reason for rearranging the ship to this purpose, and the consequent necessity of filling up the tanks and replacing the boilers, of enlarging the saloons in which so many people were to live during the voyage, and of building extra dining saloons, finally the arrangement of a thousand berths in the sides of the gigantic hull.",
+            "photo":"assets/images/API.png"
+        },
+        {
+            "id": 4,
+            "name": "Spotify",
+            "place": "ENSC",
+            "city":"Bordeaux",
+            "type": "Scholar project",
+            "duration": "2 months",
+            "description": "'Had this steam-ship been abandoned by her crew?' This was now the prevailing question, however no one appeared on the deck, perhaps the shipwrecked ones had taken refuge inside. I saw an object moving for several moments at the bows, but it turned out to be only the remains of the jib lashed to and fro by the wind.",
+            "photo":"assets/images/Spotify.png"
+        }
+    ]
+}

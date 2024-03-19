@@ -80,6 +80,22 @@
             margin-top: 5px;
             font-size: 1.2rem;
             }
+
+            .showdescription {
+                border-radius: 10px;
+                background-color: transparent !important;
+                color: white;
+                outline: none;
+                font-family: $font1;
+                font-weight: lighter;
+                margin-bottom: 20px;
+            }
+            .description {
+                font-size: $sous-texte;
+                font-weight: 400;
+                font-family: $font2;
+            }
+            
         }
     
         &:hover {

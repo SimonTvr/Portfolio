@@ -1,0 +1,126 @@
+{
+    "button" : [
+        {
+            "Previous": "Précédent",
+            "Next": "Suivant",
+            "ShowMore":"Voir plus"
+        }
+    ],
+    "contact": [
+        {
+            "YourName": "Votre nom",
+            "Email": "Email",
+            "YourMessage": "Votre message",
+            "Send": "Envoyer"
+        }
+    ],
+    "header":[
+        {
+            "Aboutme": "A propos de moi",
+            "Education": "Formations",
+            "Experience": "Experiences",
+            "Skills": "Compétences",
+            "Contact": "Contact"
+        }
+    ],
+    "informations": [
+        {
+            "id": 1,
+            "name": "Nom : Simon Tauvron",
+            "age": "Age : 22 ans",
+            "birth": "Date de naissance : 02/10/2001",
+            "nationality": "Nationalité : Français",
+            "sex": "Genre : Masculin",
+            "email": "Email : stauvron@ensc.fr",
+            "tel": "Téléphone : 06 81 21 49 83",
+            "city": "Ville : Bordeaux",
+            "photo": "assets/images/moi.jpg"
+        }
+        ],
+        "education": [
+        {
+            "id": 1,
+            "degree": "Bac scientifique",
+            "place": "Lycée Théodore de Banville",
+            "city": "Moulins",
+            "speciality": "Physique Chimie",
+            "duration": "3 ans",
+            "description": "Je revins par les boulevards à tribord, évitant le contact avec les poulies oscillantes et les cordages du gréement, balancés en tous sens par le vent ; me tenant à l'écart, ici des coups d'une grue à volant, plus loin des scories enflammées qui jaillissaient d'une forge comme d'un feu d'artifice. Je voyais à peine le sommet des mâts, hauts de deux cents pieds, qui se perdaient dans la brume, augmentée par la fumée noire des tenders et des colliers.",
+            "photo":"assets/images/Banville.jpeg"
+        },
+        {
+            "id": 2,
+            "degree": "DUT Mesures Physiques",
+            "place": "IUT Clermont-Ferrand",
+            "city": "Clermont-Ferrand",
+            "speciality": "Techniques instrumentales",
+            "duration": "2 ans",
+            "description": "Pendant ce temps, le tender s'approchait du 'Great Eastern', dont les chaînes étaient violemment tendues par la pression de la marée, et s'avançait jusqu'au pied d'un immense escalier en colimaçon, sur le côté gauche. Dans cette position, le pont du tender n'était qu'au niveau de la ligne de flottaison du navire à vapeur, ligne à laquelle il s'abaisserait en pleine cargaison, et qui dépassait encore de deux verges.",
+            "photo":"assets/images/IUT.jpeg"
+        },
+        {
+            "id": 3,
+            "degree": "CPGE ATS",
+            "place": "Lycée Lafayette",
+            "city":"Clermont-Ferrand",
+            "speciality": "Sciences de l'ingénieur",
+            "duration": "1 an",
+            "description": "D'où la nécessité de réaménager le navire à cette fin, de remplir les réservoirs et de remplacer les chaudières, d'agrandir les salons dans lesquels tant de gens allaient vivre pendant le voyage, de construire des salles à manger supplémentaires, et enfin d'aménager un millier de couchettes sur les côtés de la gigantesque coque.",
+            "photo":"assets/images/Lafayette.jpeg"
+        },
+        {
+            "id": 4,
+            "degree": "Ingénieur en cognitique",
+            "place": "ENSC",
+            "city":"Bordeaux",
+            "speciality": "Systèmes cognitifs hybrides",
+            "duration": "3 ans",
+            "description": "Ce navire à vapeur a-t-il été abandonné par son équipage ? C'était la question qui prévalait, mais personne n'apparaissait sur le pont, peut-être les naufragés s'étaient-ils réfugiés à l'intérieur. J'ai vu un objet bouger pendant quelques instants à l'étrave, mais ce n'était que les restes du foc ballotté par le vent.",
+            "photo":"assets/images/ENSC.jpeg"
+        }
+    ],
+    "projects":[
+        {
+            "id": 1,
+            "name": "Poulpocoin",
+            "place": "ENSC",
+            "city":"Bordeaux",
+            "type": "Projet scolaire",
+            "duration": "2 mois",
+            "description": "Je revins par les boulevards à tribord, évitant le contact avec les poulies oscillantes et les cordages du gréement, balancés en tous sens par le vent ; me tenant à l'écart, ici des coups d'une grue à volant, plus loin des scories enflammées qui jaillissaient d'une forge comme d'un feu d'artifice. Je voyais à peine le sommet des mâts, hauts de deux cents pieds, qui se perdaient dans la brume, augmentée par la fumée noire des tenders et des colliers.",
+            "photo":"assets/images/Poulpocoin.png"
+        },
+        {
+            "id": 2,
+            "name": "Share Your Line",
+            "place": "ENSC",
+            "city":"Bordeaux",
+            "type": "Stage",
+            "duration": "1 mois",
+            "description": "Pendant ce temps, le tender s'approchait du 'Great Eastern', dont les chaînes étaient violemment tendues par la pression de la marée, et s'avançait jusqu'au pied d'un immense escalier en colimaçon, sur le côté gauche. Dans cette position, le pont du tender n'était qu'au niveau de la ligne de flottaison du navire à vapeur, ligne à laquelle il s'abaisserait en pleine cargaison, et qui dépassait encore de deux verges.",
+            "photo":"assets/images/SYL.png"
+        },
+        {
+            "id": 3,
+            "name": "API",
+            "place": "ENSC",
+            "city":"Bordeaux",
+            "type": "Projet scolaire",
+            "duration": "2 mois",
+            "description": "D'où la nécessité de réaménager le navire à cette fin, de remplir les réservoirs et de remplacer les chaudières, d'agrandir les salons dans lesquels tant de gens allaient vivre pendant le voyage, de construire des salles à manger supplémentaires, et enfin d'aménager un millier de couchettes sur les côtés de la gigantesque coque.",
+            "photo":"assets/images/API.png"
+        },
+        {
+            "id": 4,
+            "name": "Spotify",
+            "place": "ENSC",
+            "city":"Bordeaux",
+            "type": "Projet scolaire",
+            "duration": "2 mois",
+            "description": "Ce navire à vapeur a-t-il été abandonné par son équipage ? C'était la question qui prévalait, mais personne n'apparaissait sur le pont, peut-être les naufragés s'étaient-ils réfugiés à l'intérieur. J'ai vu un objet bouger pendant quelques instants à l'étrave, mais ce n'était que les restes du foc ballotté par le vent.",
+            "photo":"assets/images/Spotify.png"
+        }
+    ]  
+}
+
+

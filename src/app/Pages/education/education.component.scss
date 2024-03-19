@@ -6,74 +6,118 @@
     padding-top: $top;
     height: 100vh;
 
+    .titre {
+        font-family: $font1;
+        display: flex;
+        font-size: $titre;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+        color: $text;
+        margin-top: 100px; 
+        height: 50px;
+    }
+
     .carousel {
         position: relative;
-        margin-top: 100px;
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
 
-        .events-container {
+        .event {
             display: flex;
-            position: relative; 
-            overflow: hidden;
-            transition: transform 0.5s ease-in-out;
-            background-color: $c1;
-            color: $background;
-            border-radius: 10px;
+            position: relative;
+            justify-content: center;
+            text-align: center;
+            font-family: $font1;
+            max-height: 535px;
             margin: 5%;
-            min-height: 650px;
 
-            .navigation-buttons {
-                position: absolute;
-                top: 50%; 
-                transform: translateY(-50%);
+            .education-container {
                 display: flex;
-                justify-content: space-between;
-                width: 100%;
-    
-    
-                button {
-                    color: $text;
-                    font-family: $font1;
-                    background-color: $background;
-                    padding: 5px 10px;
-                    min-width: 95px;
-                    min-height: 40px;
-                    border: none;
-                    cursor: pointer;
-                    font-size: 16px;
-                    outline: none;
-                    margin: 10px;
-                    border-radius: 10px;
+                flex-direction: row; /* Pour aligner les éléments côte à côte */
+                position: relative; 
+                transition: transform 0.5s ease-in-out;
+                background-color: $c1;
+                color: $background;
+                border-radius: 10px;
+                max-height: 535px;
+                width: 435px;
+
+            .event-text {
+                flex-grow: 1; /* Pour occuper tout l'espace disponible */
+                position: relative;
+                flex-direction: column; 
+                align-items: center; 
+                margin: 5%;
+
+                .degree {
+                    font-size: 3em;
+                    margin-bottom: 20px;
+                    line-height: 1.25;
+                    text-align: left;
+                    height: 160px;
                 }
-    
-                .btnprevious {
-                    left: 0;
+
+                .place {
+                    height: 40px;
+                    display: flex;
+                    position: relative;
+                    text-align: left;
+                    margin-bottom: 10px;
                 }
-    
-                .btnnext {
-                    right: 0;
+                .speciality,
+                .duration {
+                    display: flex;
+                    position: relative;
+                    text-align: left;
+                    margin-bottom: 10px;
+                }
+
+                .description {
+                    overflow-wrap: break-word;
+                    max-width: 500px;
+                    height: 140px;
+                    line-height: 2em;
+                    display: flex;
+                    position: relative;
+                    text-align: left;
+                    margin-bottom: 10px;     
+                    overflow: hidden;              
                 }
             }
-            &.education-event {
+        }
+            .event-photo {
+                flex-grow: 1; /* Pour occuper tout l'espace disponible */
+                display: flex;
+                flex-direction: column; 
+                position: relative;
+                overflow: hidden;
+                height: 535px;
+                width:435px;
+            }
+        }
 
-                .event {
-                    display: flex;
-                    padding: 20px;
-                    font-family: $font1;
+        .navigation-buttons {
+            display: flex;
+            justify-content: center; /* Pour centrer les boutons horizontalement */
+            //margin-top: 20px; /* Espace entre le texte et les boutons */
 
-                    .event-content {
-                        display: flex;
-                        margin-left: 100px;
-                        margin-right: 100px;
-                        margin-top: 20px;
-                        width: 500px;
-
-                        .small-polaroid {
-                            width: 100px; 
-                            height: 100px; 
-                            margin-left: 100px;
-                        }
-                    }
-                }
+            button {
+                color: $text;
+                font-family: $font1;
+                background-color: $background;
+                padding: 5px 10px;
+                width: 95px;
+                height: 40px;
+                border: none;
+                cursor: pointer;
+                font-size: 16px;
+                outline: none;
+                margin: 10px;
+                border-radius: 10px;
             }
         }
     }

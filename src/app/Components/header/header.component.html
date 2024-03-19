@@ -1,8 +1,16 @@
 <div class="header">
-    <div class="accueil"><a (click)="moveTo('accueil')">Simon Tauvron</a></div>
-    <div class="about"><a (click)="moveTo('about-me')">About me</a></div>
-    <div class="education"><a (click)="moveTo('education')">Education</a></div>
-    <div class="experience"><a (click)="moveTo('experience')">Experience</a></div>
-    <div class="skills"><a (click)="moveTo('skills')">Skills</a></div>
-    <div class="contact"><a (click)="moveTo('contact')">Contact</a></div>
+    <div class="Titres">
+        <div class="accueil"><a (click)="moveTo('accueil')">Simon Tauvron</a></div>
+        <div class="about"><a (click)="moveTo('about-me')">{{header.Aboutme}}</a></div>
+        <div class="education"><a (click)="moveTo('education')">{{header.Education}}</a></div>
+        <div class="experience"><a (click)="moveTo('experience')">{{header.Experience}}</a></div>
+        <div class="skills"><a (click)="moveTo('skills')">{{header.Skills}}</a></div>
+        <div class="contact"><a (click)="moveTo('contact')">{{header.Contact}}</a></div>
+        <div class="dropdown">
+            <select (change)="changeLanguage($event)">
+                <option value="en">EN</option>
+                <option value="fr">FR</option>
+            </select>
+        </div>
+    </div>
 </div>

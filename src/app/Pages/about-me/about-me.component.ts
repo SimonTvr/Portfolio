@@ -12,14 +12,12 @@ export class AboutMeComponent implements OnInit {
   isFlipped = false;
   photoPath: string = "assets/images/moi.jpg";
 
-  constructor(private dataService: DataService) {
-    
-  }
+  constructor(private dataService: DataService) {}
 
   ngOnInit(): void {
     this.dataService.getData().subscribe((result) => {
       console.log('Données récupérées dans le composant :', result);
-      this.informations = result?.informations[0]; // Accédez au premier élément du tableau
+      this.informations = result?.informations[0];
       console.log('Informations dans le composant :', this.informations);
     });
   }

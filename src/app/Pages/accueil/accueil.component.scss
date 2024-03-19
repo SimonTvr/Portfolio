@@ -3,7 +3,6 @@
 .page {
     padding-top: $top;
     height: 100vh;
-    //animation: cameraFlash .1s .1s alternate-reverse 1;
 
     .titre {
         font-family: $font1;
@@ -20,6 +19,14 @@
         height: 50px;
     }
 
+    .Click {
+        position: absolute;
+        left:200px;
+        top:400px;
+        width:300px;
+        z-index: 2
+    }
+
     .polaroid {
         display: flex;
         flex-direction: column;
@@ -30,28 +37,42 @@
         margin-top: 100px;
         z-index: 1;
         overflow: hidden;
-        /*animation: ZoomInRotate 1.5s cubic-bezier(.71,0,.54,.88);
-        animation-delay: 300ms;*/
-        .img {
-            width: 100%; 
-            height: auto; 
+        z-index: 1;
+
+        img {
+            max-width: 100%; /* Ajuster la largeur de l'image en fonction de la taille du conteneur */
+            max-height: 100%; /* Ajuster la hauteur de l'image en fonction de la taille du conteneur */
             margin-bottom: $bottom;
+            transition: filter 0.3s ease; /* Ajout de la transition pour un effet plus fluide */
+        }
+    }
+
+    /* Ajout de l'effet de flash */
+    .flash-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+        opacity: 0;
+        z-index: 2;
+        pointer-events: none;
+    }
+
+    .flash-effect {
+        animation: flashAnimation 0.3s;
+    }
+
+    @keyframes flashAnimation {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 0.8;
+        }
+        100% {
+            opacity: 0;
         }
     }
 }
-
-/*@keyframes ZoomInRotate {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(6);
-        rotate: 180deg;
-        //transform: translateY(50%);
-    }
-}
-
-@keyframes cameraFlash {
-    from {box-shadow: 0;}
-    to {box-shadow: inset 0 0 0 100px #fff;}
-}*/

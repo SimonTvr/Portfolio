@@ -1,29 +1,13 @@
 <div id="experience" class="page">
-    <div class=titre>Experience</div>
+    <div class="titre">{{header.Experience}}</div>
     <div class="container">
-        <div>
-        <div class="content">
-            <h2>{{projects.name}}</h2>
-            <span>{{projects.duration}}</span>
-        </div>
-        </div>
-        <div>
-        <div class="content">
-            <h2>{{projects.name}}</h2>
-            <span>{{projects.duration}}</span>
-        </div>
-        </div>
-        <div>
-        <div class="content">
-            <h2>{{projects.name}}</h2>
-            <span>{{projects.duration}}</span>
-        </div>
-        </div>
-        <div>
-        <div class="content">
-            <h2>{{projects.name}}</h2>
-            <span>{{projects.duration}}</span>
-        </div>
+        <div *ngFor="let project of projects" class="project" [style.backgroundImage]="'url(' + project.photo + ')'">
+            <div class="content">
+                <h2>{{ project.name }}</h2>
+                <span>{{ project.duration }}</span> <br>
+                <div class="showdescription" (click)="toggleDescription(project)">{{button.ShowMore}}</div> 
+                <div class="description" *ngIf="project.showDescription">{{ project.description }}</div> 
+            </div>
         </div>
     </div>
 </div>

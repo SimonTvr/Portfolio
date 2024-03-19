@@ -1,22 +1,23 @@
 <div id="education" class="page">
+    <div class=titre>{{header.Education}}</div>
     <div class="carousel">
-        <div class="events-container education-event">
-            <div class="navigation-buttons">
-                <button class="btnprevious" (click)="showPreviousEvent()">Previous</button>
-                <button class="btnnext" (click)="showNextEvent()">Next</button>
-            </div>
-            <div class="event">
-                <div class="event-content">
-                    <h3>{{ educationData[currentIndex]?.degree }}</h3>
-                    <p>{{ educationData[currentIndex]?.place }}</p>
-                    <p>{{ educationData[currentIndex].city }}</p>
-                    <p>{{ educationData[currentIndex].speciality }}</p>
-                    <p>{{ educationData[currentIndex].duration }}</p>
-                    <p>{{ educationData[currentIndex].description }}</p>               
+        <div class="event">
+            <div class="education-container">
+                <div class="event-text">
+                    <div class="degree"> {{ educationData[currentIndex]?.degree }}</div>
+                    <div class="place"> {{ educationData[currentIndex]?.place }}, {{ educationData[currentIndex].city }}</div>
+                    <div class="speciality"> Option : {{ educationData[currentIndex].speciality }}</div>
+                    <div class="duration"> {{ educationData[currentIndex].duration }}</div>
+                    <div class="description"> {{ educationData[currentIndex].description }}</div>   
+                    <div class="navigation-buttons">
+                        <button class="btnprevious" (click)="showPreviousEvent()">{{ button.Previous }}</button>
+                        <button class="btnnext" (click)="showNextEvent()">{{ button.Next }}</button>
+                    </div>     
                 </div>
+            </div>  
+            <div class="event-photo">
                 <app-polaroid [photoSrc]="educationData[currentIndex]?.photo"></app-polaroid>
-            </div>
+            </div>    
         </div>
     </div>
-</div>                   
-                    
+</div>
