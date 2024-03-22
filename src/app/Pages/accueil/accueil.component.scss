@@ -6,6 +6,7 @@
 
     .titre {
         font-family: $font1;
+        font-weight: bold;
         display: flex;
         font-size: $titre;
         text-align: center;
@@ -44,6 +45,7 @@
             max-height: 100%; /* Ajuster la hauteur de l'image en fonction de la taille du conteneur */
             margin-bottom: $bottom;
             transition: filter 0.3s ease; /* Ajout de la transition pour un effet plus fluide */
+            cursor: pointer;
         }
     }
 

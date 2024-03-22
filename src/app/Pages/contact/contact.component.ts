@@ -51,7 +51,7 @@ export class ContactComponent {
       // Vérifier si this.contactForm est null ou undefined
       if (this.contactForm) {
         // Construire l'objet à envoyer
-        const formData = {
+        const Contact = {
           name: this.contactForm.get('name')?.value, // Ajouter '?.' pour accéder aux propriétés en toute sécurité
           email: this.contactForm.get('email')?.value,
           message: this.contactForm.get('message')?.value
@@ -61,9 +61,9 @@ export class ContactComponent {
         const headers = new HttpHeaders({
           'Content-Type': 'application/json'
         });
-        
+
         // Envoyer les données du formulaire à l'API
-        this.http.post<any>('https://localhost:7103/api/contact/send-email', formData).subscribe(
+        this.http.post<any>('https://localhost:7103/api/contact/send-email', Contact).subscribe(
           (response) => {
             console.log('E-mail envoyé avec succès !', response);
             // Réinitialiser le formulaire

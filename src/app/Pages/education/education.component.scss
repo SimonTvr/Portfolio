@@ -10,6 +10,7 @@
         font-family: $font1;
         display: flex;
         font-size: $titre;
+        font-weight: bold;
         text-align: center;
         align-items: center;
         flex-direction: column;
@@ -55,6 +56,7 @@
 
                 .degree {
                     font-size: 3em;
+                    font-weight: bold;
                     margin-bottom: 20px;
                     line-height: 1.25;
                     text-align: left;
@@ -108,6 +110,7 @@
             button {
                 color: $text;
                 font-family: $font1;
+                font-weight: bold;
                 background-color: $background;
                 padding: 5px 10px;
                 width: 95px;

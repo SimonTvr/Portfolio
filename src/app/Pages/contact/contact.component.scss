@@ -10,6 +10,7 @@
         font-family: $font1;
         display: flex;
         font-size: $titre;
+        font-weight: bold;
         text-align: center;
         align-items: center;
         flex-direction: column;
@@ -53,6 +54,7 @@
                 p {
                     margin: 0;
                     color: $background;
+                    font-weight: bold;
                 }
             }
         }
@@ -86,6 +88,7 @@
                         label {
                             margin-bottom: 5px;
                             color: $background;
+                            font-weight: bold;
                         }
 
                         input,
@@ -111,20 +114,17 @@
 
                     button {
                         color: $c1;
-                        padding: 10px;
                         border: none;
                         border-radius: 4px;
-                        cursor: pointer;
                         background-color: $background;
                         padding: 12px;
-                        border: none;
-                        border-radius: 4px;
                         cursor: pointer;
                         transition: background-color 0.3s ease;
                         font-family: $font1;
+                        font-weight: bold;
 
                         &:hover {
-                            background-color: lighten($c1, 30%);
+                            background-color: lighten($c1, 50%);
                         }
                     }
                 }

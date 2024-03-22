@@ -8,6 +8,7 @@
 
     .titre {
         font-family: $font1;
+        font-weight: bold;
         display: flex;
         font-size: $titre;
         text-align: center;
@@ -89,6 +90,7 @@
                 font-family: $font1;
                 font-weight: lighter;
                 margin-bottom: 20px;
+                margin-top: 10px;
             }
             .description {
                 font-size: $sous-texte;
