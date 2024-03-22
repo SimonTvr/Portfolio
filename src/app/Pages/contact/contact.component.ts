@@ -52,9 +52,9 @@ export class ContactComponent {
       if (this.contactForm) {
         // Construire l'objet à envoyer
         const Contact = {
-          name: this.contactForm.get('name')?.value, // Ajouter '?.' pour accéder aux propriétés en toute sécurité
-          email: this.contactForm.get('email')?.value,
-          message: this.contactForm.get('message')?.value
+          Name: this.contactForm.get('name')?.value, // Ajouter '?.' pour accéder aux propriétés en toute sécurité
+          Email: this.contactForm.get('email')?.value,
+          Message: this.contactForm.get('message')?.value
         };
   
 
