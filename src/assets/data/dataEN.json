@@ -3,7 +3,8 @@
         {
             "Previous": "Previous",
             "Next": "Next",
-            "ShowMore":"Show more"
+            "ShowMore":"Show more",
+            "ShowLess":"Show less"
         }
     ],
     "contact" : [

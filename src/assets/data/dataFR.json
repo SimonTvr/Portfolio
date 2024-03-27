@@ -3,7 +3,9 @@
         {
             "Previous": "Précédent",
             "Next": "Suivant",
-            "ShowMore":"Voir plus"
+            "ShowMore":"Voir plus",
+            "ShowLess":"Voir moins"
+
         }
     ],
     "contact": [

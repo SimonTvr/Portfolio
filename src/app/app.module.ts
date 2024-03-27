@@ -21,6 +21,7 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { FormsModule } from '@angular/forms'; 
 import { TranslateService } from '@ngx-translate/core';
+import { SkillComponent } from './Components/skill/skill.component';
 
 
 
@@ -38,6 +39,7 @@ import { TranslateService } from '@ngx-translate/core';
     ContactComponent,
     MainPageComponent,
     PolaroidComponent,
+    SkillComponent,
   ],
   imports: [
     BrowserModule,

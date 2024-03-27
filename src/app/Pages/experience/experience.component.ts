@@ -22,6 +22,7 @@ export class ExperienceComponent {
       // Ajoutez une propriété showDescription à chaque projet pour gérer l'affichage de la description
       this.projects.forEach(project => {
         project.showDescription = false;
+        project.buttonLabel = result?.button[0].ShowMore; // Initialisez le libellé du bouton
       });
     });
 
@@ -40,5 +41,6 @@ export class ExperienceComponent {
 
   toggleDescription(project: any) {
     project.showDescription = !project.showDescription; // Inversez la valeur de showDescription
+    project.buttonLabel = project.showDescription ? this.button.ShowLess : this.button.ShowMore; // Changez le libellé du bouton
   }
 }

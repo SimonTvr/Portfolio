@@ -23,13 +23,8 @@
         height: 50px;
     }
 
-        body {
-        font-family: 'Poor Story', cursive;
-        background: #bdffbd;
-        }
-
         .wrapper {
-            position: relative;
+        position: relative;
         width: 100%;
         padding: 0 2rem;
         text-align: center;
@@ -45,6 +40,8 @@
         height: auto;
         }
         .caption {
+        font-family: $font1;
+        font-weight: bolder;
         font-size: 1.8rem;
         text-align: center;
         line-height: 2em;
@@ -128,4 +125,14 @@
         box-shadow: 0 1rem 3rem rgba(0,0,0,0.2);
         transition: all 0.35s;
         }
+
+        @media screen and (max-width: 767px) {
+            .caption {
+                display: none; /* Cacher le nom des logos */
+            }
+            .item {
+                width: 40%; /* Ajustez la largeur des items pour les téléphones selon vos besoins */
+            }
+        }
+        
 }

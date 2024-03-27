@@ -1,4 +1,5 @@
 <div id="education" class="page">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
     <div class=titre>{{header.Education}}</div>
     <div class="carousel">
         <div class="event">
@@ -17,6 +18,9 @@
             </div>  
             <div class="event-photo">
                 <app-polaroid [photoSrc]="educationData[currentIndex]?.photo"></app-polaroid>
+                <div class="txtpolaroid">
+                    <p>{{ educationData[currentIndex]?.place }}</p>
+                </div>
             </div>    
         </div>
     </div>

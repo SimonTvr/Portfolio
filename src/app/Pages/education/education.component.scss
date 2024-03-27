@@ -32,6 +32,7 @@
             position: relative;
             justify-content: center;
             text-align: center;
+            align-items: center;
             font-family: $font1;
             max-height: 535px;
             margin: 5%;
@@ -46,6 +47,7 @@
                 border-radius: 10px;
                 max-height: 535px;
                 width: 435px;
+                margin-right: 5%;
 
             .event-text {
                 flex-grow: 1; /* Pour occuper tout l'espace disponible */
@@ -92,13 +94,27 @@
             }
         }
             .event-photo {
-                flex-grow: 1; /* Pour occuper tout l'espace disponible */
+                //flex-grow: 1; /* Pour occuper tout l'espace disponible */
                 display: flex;
                 flex-direction: column; 
                 position: relative;
                 overflow: hidden;
                 height: 535px;
                 width:435px;
+                margin-left: 5%;
+
+                .txtpolaroid {
+                    position: absolute;
+                    width: 100%;
+                    left: 50%;
+                    top: 90%; 
+                    font-family: 'Caveat', cursive;
+                    font-size: 3em;
+                    line-height: 0.8em;
+                    color: $c1;
+                    text-align: center;
+                    transform: translate(-50%, -50%);
+                    }
             }
         }
 
@@ -121,6 +137,22 @@
                 outline: none;
                 margin: 10px;
                 border-radius: 10px;
+            }
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .carousel {
+            .event {
+                flex-direction: column; // Changer la direction de l'affichage pour empiler les éléments verticalement
+        
+                .education-container {
+                    width: 100%; // Modifier la largeur du conteneur de texte pour utiliser toute la largeur disponible
+                    margin-bottom: 20px; // Ajouter de l'espace en bas du conteneur de texte
+                }
+        
+                .event-photo {
+                    width: 100%; // Utiliser toute la largeur disponible pour le conteneur de l'image
+                }
             }
         }
     }

@@ -22,10 +22,14 @@
 
     .Click {
         position: absolute;
-        left:200px;
-        top:400px;
-        width:300px;
-        z-index: 2
+        left: 200px; // Position originale sur les écrans PC
+        top: 400px;
+        width: 300px;
+        z-index: 2;
+
+        @media screen and (max-width: 767px) {
+            display: none; // Masquer l'image sur les téléphones
+        }
     }
 
     .polaroid {
@@ -75,6 +79,13 @@
         }
         100% {
             opacity: 0;
+        }
+    }
+
+    /* Media queries pour les tailles d'écran */
+    @media screen and (max-width: 767px) {
+        .Click {
+            display: none; // Masquer l'image sur les téléphones
         }
     }
 }

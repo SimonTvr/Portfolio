@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { DataService } from '../../../assets/data/data.service';
-import { HttpClient } from '@angular/common/http';
-import { HttpHeaders } from '@angular/common/http';
-
+import { ContactService } from '../../../assets/data/contact.service';
+import { HttpClient } from '@angular/common/http'; 
+import { Contact } from '../../../assets/data/contact.model';
 
 @Component({
   selector: 'app-contact',
@@ -17,7 +17,12 @@ export class ContactComponent {
   contactForm: FormGroup;
   emailSent: boolean = false;
 
-  constructor(private fb: FormBuilder, private http: HttpClient, private dataService: DataService) {
+  constructor(
+    private fb: FormBuilder, 
+    private dataService: DataService,
+    private contactService: ContactService,
+    private http: HttpClient
+  ) {
     this.contactForm = this.fb.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
@@ -29,60 +34,40 @@ export class ContactComponent {
   ngOnInit(): void {
     this.dataService.getData().subscribe((result) => {
       console.log('Données récupérées dans le composant :', result);
-      this.header = result?.header[0]; // Accédez au premier élément du tableau
+      this.header = result?.header[0];
       console.log('Informations dans le composant :', this.header);
     });
 
     this.dataService.getData().subscribe((result) => {
       console.log('Données récupérées dans le composant :', result);
-      this.contact = result?.contact[0]; // Accédez au premier élément du tableau
+      this.contact = result?.contact[0];
       console.log('Informations dans le composant :', this.contact);
     });
 
     this.dataService.getData().subscribe((result) => {
       console.log('Données récupérées dans le composant :', result);
-      this.informations = result?.informations[0]; // Accédez au premier élément du tableau
+      this.informations = result?.informations[0];
       console.log('Informations dans le composant :', this.informations);
     });
   }
 
-  submitForm() {
+  submitForm(): void {
     if (this.contactForm.valid) {
-      // Vérifier si this.contactForm est null ou undefined
-      if (this.contactForm) {
-        // Construire l'objet à envoyer
-        const Contact = {
-          Name: this.contactForm.get('name')?.value, // Ajouter '?.' pour accéder aux propriétés en toute sécurité
-          Email: this.contactForm.get('email')?.value,
-          Message: this.contactForm.get('message')?.value
-        };
-  
-
-        const headers = new HttpHeaders({
-          'Content-Type': 'application/json'
-        });
-
-        // Envoyer les données du formulaire à l'API
-        this.http.post<any>('https://localhost:7103/api/contact/send-email', Contact).subscribe(
-          (response) => {
-            console.log('E-mail envoyé avec succès !', response);
-            // Réinitialiser le formulaire
-            this.contactForm.reset();
-            // Marquer l'envoi d'e-mail comme réussi
-            this.emailSent = true;
-          },
-          (error) => {
-            console.error('Erreur lors de l\'envoi de l\'e-mail :', error);
-            // Afficher un message d'erreur à l'utilisateur
+      // Envoi de la requête HTTP uniquement si le formulaire est valide
+      this.http.post<any>('https://localhost:7103/api/contact/send-email', this.contactForm.value).subscribe({
+        next: (response) => {
+          console.log(response); // Affiche la réponse de l'API dans la console
+          if (response && response.message === 'Email sent successfully') {
+            console.log('L\'e-mail a été envoyé avec succès !');
+            this.emailSent = true; // Marquer l'e-mail comme envoyé avec succès
+          } else {
+            console.error('Réponse de l\'API invalide.');
           }
-        );
-      } else {
-        console.error('Le formulaire de contact n\'est pas encore initialisé.');
-      }
-    } else {
-      // Si le formulaire est invalide, afficher un message d'erreur à l'utilisateur
+        },
+        error: (error) => {
+          console.error('Erreur lors de l\'envoi de l\'e-mail :', error);
+        }
+      });
     }
-  }
-  
-  
+  }  
 }

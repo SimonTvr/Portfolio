@@ -21,7 +21,7 @@
 
         img {
             width: 50px;
-            margin-left: 80px;
+            //margin-left: 80px;
         }
     }
 
@@ -70,9 +70,9 @@
         position: absolute;
         width: 100%;
         left: 50%;
-        top: 88%; 
-        font-family: "Fashion script";
-        font-size: 7em;
+        top: 90%; 
+        font-family: 'Caveat', cursive;
+        font-size: 5em;
         color: $c1;
         text-align: center;
         transform: translate(-50%, -50%);
@@ -83,7 +83,7 @@
             width: 100%;
             left: 50%;
             top: 50%; 
-            font-family: "Fashion script";
+            font-family: 'Caveat', cursive;
             font-size: 4em;
             color: $c1;
             text-align: center;

@@ -1,0 +1,28 @@
+@import "../../Styles/variables.scss";
+
+.item {
+    width: 30%;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.polaroid {
+    position: relative;
+    width: 150px; /* Ajustez la taille du polaroid selon vos besoins */
+    height: auto;
+}
+
+.polaroid > img {
+    width: 100%; /* La largeur de l'image correspond à 100% de la largeur du polaroid */
+    height: auto;
+    display: block; /* Assurez-vous que l'image est un élément en bloc */
+    margin: 0 auto; /* Centrez l'image horizontalement */
+}
+
+.caption {
+    font-size: 2rem; /* Augmentation de la taille de la police */
+    font-family: $font1;
+    font-weight: bold;
+    text-align: center;
+    line-height: 2em;
+}

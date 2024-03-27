@@ -1,16 +1,36 @@
 <div class="header">
     <div class="Titres">
         <div class="accueil"><a (click)="moveTo('accueil')">Simon Tauvron</a></div>
-        <div class="about"><a (click)="moveTo('about-me')">{{header.Aboutme}}</a></div>
-        <div class="education"><a (click)="moveTo('education')">{{header.Education}}</a></div>
-        <div class="experience"><a (click)="moveTo('experience')">{{header.Experience}}</a></div>
-        <div class="skills"><a (click)="moveTo('skills')">{{header.Skills}}</a></div>
-        <div class="contact"><a (click)="moveTo('contact')">{{header.Contact}}</a></div>
-        <div class="dropdown">
+        <div class="menu-smartphone">
+            <div class="navigation-smartphone">
+                <select (change)="navigateToPage($event)">
+                    <option value="accueil">{{header?.Accueil}}</option>
+                    <option value="about-me">{{header?.Aboutme}}</option>
+                    <option value="education">{{header?.Education}}</option>
+                    <option value="experience">{{header?.Experience}}</option>
+                    <option value="skills">{{header?.Skills}}</option>
+                    <option value="contact">{{header?.Contact}}</option>
+                </select>
+            </div>
+            <div class="dropdown-language">
+                <select (change)="changeLanguage($event)">
+                    <option value="en">EN</option>
+                    <option value="fr">FR</option>
+                </select>
+            </div>
+        </div>
+        <div class="onglets-pc">
+            <div class="about"><a (click)="moveTo('about-me')">{{header?.Aboutme}}</a></div>
+            <div class="education"><a (click)="moveTo('education')">{{header?.Education}}</a></div>
+            <div class="experience"><a (click)="moveTo('experience')">{{header?.Experience}}</a></div>
+            <div class="skills"><a (click)="moveTo('skills')">{{header?.Skills}}</a></div>
+            <div class="contact"><a (click)="moveTo('contact')">{{header?.Contact}}</a></div>
+            <div class="dropdown">
             <select (change)="changeLanguage($event)">
                 <option value="en">EN</option>
                 <option value="fr">FR</option>
             </select>
+        </div>
         </div>
     </div>
 </div>

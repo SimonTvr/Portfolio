@@ -16,6 +16,17 @@ body {
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+.classe {
+    /* Styles pour les écrans de taille PC */
+}
+
+@media screen and (max-width: 767px) {
+    .classe {
+        /* Styles spécifiques pour les smartphones */
+    }
+}
+
+
 /* Importing Bootstrap SCSS file. */
 @import "./node_modules/bootstrap/scss/bootstrap";
 

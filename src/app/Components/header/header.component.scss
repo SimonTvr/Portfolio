@@ -1,7 +1,7 @@
 @import "../../Styles/variables.scss";
 
-.Titres {
-    display: flex; 
+.onglets-pc {
+    display: flex;
     justify-content: space-around;
     align-items: center;
     position: fixed;
@@ -18,44 +18,89 @@
     z-index: 1000;
     a {
         text-decoration: none;
-        color: inherit; 
-        cursor: pointer; 
+        color: inherit;
+        cursor: pointer;
     }
-    
+
     .custom-link {
-        color: $text; 
+        color: $text;
         text-decoration: none;
     }
+
     > div:not(:last-child) {
-        margin-left: 10px; 
+        margin-left: 10px;
     }
+
     .accueil {
         margin-right: 10px;
     }
-    .about {
 
+    // Styles pour les onglets visibles sur les smartphones
+    
+    // Styles pour les onglets visibles sur les PC
+    .onglets-pc {
+        display: flex;
     }
-    .education {
-        
-    }
-    .experience {
 
-    }
-    .skills {
-        
-    }
-    .contact {
-        
-
-    }
     .dropdown {
         select {
-        background-color: $c1;
-        color: $background;
-        border-radius: 10px;
-        padding-right: 5px;
-        padding-left: 5px;
-        font-weight: bold;
+            background-color: $c1;
+            color: $background;
+            border-radius: 10px;
+            padding-right: 5px;
+            padding-left: 5px;
+            font-weight: bold;
+        }
     }
+}
+
+// Media Query pour les écrans de taille smartphone
+@media screen and (max-width: 767px) {
+    .Titres {
+        .onglets-pc {
+            display: none; // Masquer les onglets sur les smartphones
+        }
+
+        select {
+            background-color: $c1;
+            color: $background;
+            border-radius: 10px;
+            padding-right: 5px;
+            padding-left: 5px;
+            font-weight: bold;
+        }
+        .dropdown {
+            display: block; // Afficher le dropdown sur les petits écrans
+            margin-right: 10px; // Ajustez l'espacement si nécessaire
+        }
+    }
+}
+
+.menu-smartphone {
+    display: flex;
+    justify-content: center; /* Répartir les éléments à l'extrême gauche et à l'extrême droite */
+    align-items: center;
+    position: fixed;
+    font-family: $font1;
+    font-size: 1.5em;
+    font-weight: bold;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: $header;
+    margin-bottom: 50px;
+    background-color: $background;
+    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+
+    /* Appliquer les styles aux selects à l'intérieur de .menu-smartphone */
+    select {
+        margin: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
     }
 }
