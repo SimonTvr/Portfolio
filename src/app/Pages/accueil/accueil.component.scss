@@ -22,7 +22,7 @@
 
     .Click {
         position: absolute;
-        left: 200px; // Position originale sur les écrans PC
+        left: 200px; 
         top: 400px;
         width: 300px;
         z-index: 2;
@@ -45,10 +45,10 @@
         z-index: 1;
 
         img {
-            max-width: 100%; /* Ajuster la largeur de l'image en fonction de la taille du conteneur */
-            max-height: 100%; /* Ajuster la hauteur de l'image en fonction de la taille du conteneur */
+            max-width: 100%; 
+            max-height: 100%; 
             margin-bottom: $bottom;
-            transition: filter 0.3s ease; /* Ajout de la transition pour un effet plus fluide */
+            transition: filter 0.3s ease; 
             cursor: pointer;
         }
     }
@@ -85,7 +85,7 @@
     /* Media queries pour les tailles d'écran */
     @media screen and (max-width: 767px) {
         .Click {
-            display: none; // Masquer l'image sur les téléphones
+            display: none; 
         }
     }
 }

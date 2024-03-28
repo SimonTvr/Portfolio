@@ -35,7 +35,6 @@
         margin-right: 10px;
     }
 
-    // Styles pour les onglets visibles sur les smartphones
     
     // Styles pour les onglets visibles sur les PC
     .onglets-pc {
@@ -58,7 +57,7 @@
 @media screen and (max-width: 767px) {
     .Titres {
         .onglets-pc {
-            display: none; // Masquer les onglets sur les smartphones
+            display: none; 
         }
 
         select {
@@ -70,15 +69,15 @@
             font-weight: bold;
         }
         .dropdown {
-            display: block; // Afficher le dropdown sur les petits écrans
-            margin-right: 10px; // Ajustez l'espacement si nécessaire
+            display: block; 
+            margin-right: 10px; 
         }
     }
 }
 
 .menu-smartphone {
     display: flex;
-    justify-content: center; /* Répartir les éléments à l'extrême gauche et à l'extrême droite */
+    justify-content: center; 
     align-items: center;
     position: fixed;
     font-family: $font1;
@@ -93,7 +92,6 @@
     box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.3);
     z-index: 1000;
 
-    /* Appliquer les styles aux selects à l'intérieur de .menu-smartphone */
     select {
         margin: 20px;
     }

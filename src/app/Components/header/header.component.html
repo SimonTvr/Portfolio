@@ -1,10 +1,9 @@
 <div class="header">
     <div class="Titres">
-        <div class="accueil"><a (click)="moveTo('accueil')">Simon Tauvron</a></div>
         <div class="menu-smartphone">
             <div class="navigation-smartphone">
                 <select (change)="navigateToPage($event)">
-                    <option value="accueil">{{header?.Accueil}}</option>
+                    <option value="accueil">{{header?.Home}}</option>
                     <option value="about-me">{{header?.Aboutme}}</option>
                     <option value="education">{{header?.Education}}</option>
                     <option value="experience">{{header?.Experience}}</option>

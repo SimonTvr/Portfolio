@@ -8,19 +8,19 @@
 
 .polaroid {
     position: relative;
-    width: 150px; /* Ajustez la taille du polaroid selon vos besoins */
+    width: 150px; 
     height: auto;
 }
 
 .polaroid > img {
-    width: 100%; /* La largeur de l'image correspond à 100% de la largeur du polaroid */
+    width: 100%; 
     height: auto;
-    display: block; /* Assurez-vous que l'image est un élément en bloc */
-    margin: 0 auto; /* Centrez l'image horizontalement */
+    display: block; 
+    margin: 0 auto; 
 }
 
 .caption {
-    font-size: 2rem; /* Augmentation de la taille de la police */
+    font-size: 2rem; 
     font-family: $font1;
     font-weight: bold;
     text-align: center;
