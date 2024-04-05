@@ -15,7 +15,7 @@ export class SkillsComponent {
   ngOnInit(): void {
     this.dataService.getData().subscribe((result) => {
       console.log('Données récupérées dans le composant :', result);
-      this.header = result?.header[0]; // Accédez au premier élément du tableau
+      this.header = result?.header[0]; 
       console.log('Informations dans le composant :', this.header);
     });
   }

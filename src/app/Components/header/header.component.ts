@@ -35,7 +35,7 @@ export class HeaderComponent {
   ngOnInit(): void {
     this.dataService.getData().subscribe((result) => {
       console.log('Données récupérées dans le composant :', result);
-      this.header = result?.header[0]; // Accède au premier élément du tableau avec une vérification de null
+      this.header = result?.header[0]; 
       console.log('Informations dans le composant :', this.header);
     });
   }
